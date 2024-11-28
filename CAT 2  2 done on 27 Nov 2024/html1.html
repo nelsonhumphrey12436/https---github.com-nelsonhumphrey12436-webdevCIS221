@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            margin: 20px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        
+        span{
+            color: red;
+            font-size: x-small;
+            text-align: right;
+        }
+        button{
+            align-items: center;
+            padding: 5px 5px;
+            background-color: rgb(221, 195, 195);
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .frame{
+            align-items: left;
+            text-align: left;
+            margin-left: 30%;
+            
+        }
+        #fullname{
+            margin-left: 50px;
+        }
+        #password{
+            margin-left: 60px;
+
+        }
+        
+        #email{
+            margin-left: 30px;
+
+        }
+        #phonenumber{
+            margin-left: 20px;
+
+        }
+        #zipcode{
+            margin-left: 60px;
+
+
+        }
+        #cardnumber{
+            margin-left: 30px;
+
+        }
+        #expirationdate{
+            margin-left: 20px;
+
+        }
+        .but{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Register Account
+    </h1>
+    <div class="frame">
+    <form>
+        <div>
+            <label for="fullname">
+                Full Name
+            </label>
+            <input type="text" id="fullname" name="fullname" value="as" required>
+            <span class="error">
+                User name must be atleast 4 characters
+            </span>
+        </div>
+        <div>
+            <label for="password">
+                Password
+            </label>
+            <input type="password" id="password" name="password" value=".." required>
+            <span class="error">
+                Password must be at least 4 characters
+            </span>
+        </div>
+        <div>
+            <label for="confirmpassword">
+                Confirm Password
+            </label>
+            <input type="password" id="confirmpassword" name="confirmpassword" value="...." required>
+            <span class="error">
+                Passwords do not match
+            </span>
+        </div>
+        <div>
+            <label for="email">
+                Email Address
+            </label>
+            <input type="email" id="email" name="email" value="john@gmail.com" required>
+            <span class="error"
+            >Invalid email format
+        </span>
+        <br/>
+        <small>Format:nelson hum@gmail.com</small>
+        </div>
+        <div>
+            <label for="phonenumber">
+                Phone Number
+            </label>
+            <input type="number" id="phonenumber" name="phonenumber" value="11111111111111" required>
+           
+        </div>
+        <div>
+            <label for="zipcode">
+                Zip Code
+            </label>
+            <input type="number" id="zipcode" name="zipcode" value="1111111111" required>
+            <span class="error">
+                Invalid Zip Code
+            </span>
+           
+        </div>
+        <div>
+       
+        <div>
+            <label for="cardnumber">
+                Card Number
+            </label>
+            <input type="number" id="cardnumber" name="cardnumber" value="11111111111111111111" required>
+            <span class="error">
+                Invalid card number format
+            </span>
+           
+        </div>
+        <div>
+            <label for="expirationdate">
+                Expiration Date
+            </label>
+            <input type="date" id="expirationdate" name="expirationdate" value="11111111111111111111" required>
+            <span class="error">
+                Invalid date format
+            </span>
+
+        </div>
+        <div class="butt">
+            <button type="submit">
+                Register
+            </button> 
+                <button type="reset">
+                    Clear Form
+                </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
